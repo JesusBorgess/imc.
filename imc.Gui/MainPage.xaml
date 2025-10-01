@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="imc.Gui.MainPage"
+             Shell.BackgroundColor="#512BD4"
+             Shell.TitleColor="White"
+             Title="Indice de masa corporal">
+
+    <VerticalStackLayout
+        Margin="24"
+        Padding="16"
+        Spacing="24">
+
+        <Border
+            Stroke="LightGray"
+            Padding="16">
+
+            <VerticalStackLayout
+                Spacing="4">
+                <Label Text="peso en quilogramos"
+                       FontSize="Small"/>
+                <Entry/>
+                <Label Text="estatura en metros"
+                       FontSize="Small"/>
+                <Entry
+                    FontSize="small"/>
+            </VerticalStackLayout>
+        </Border>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="36">
+            <Button Text="calcular"
+                    FontSize="Small"/>
+            <Button Text="limpiar"
+                    FontSize="Small"/>
+        </HorizontalStackLayout>
+
+        <Border
+            Stroke="LightCoral">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"/>
+            </Border.StrokeShape>
+            <VerticalStackLayout
+                Padding="16"
+                Spacing="4">
+                <Label Text="el indice de masa corporal de la persona es"
+                       FontSize="Small"/>
+                <Label Text="24.1123123"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+                <Label Text="La situacion nutrimental de la persona es"
+                       FontSize="Small"/>
+                <Label Text="peso normal"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+            </VerticalStackLayout>
+            
+        </Border>
+    </VerticalStackLayout>
+
+    
+</ContentPage>

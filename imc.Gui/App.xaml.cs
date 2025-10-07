@@ -1,4 +1,4 @@
-﻿namespace imc.Gui
+﻿namespace Imc.Gui
 {
     public partial class App : Application
     {
